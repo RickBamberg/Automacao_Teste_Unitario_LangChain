@@ -281,7 +281,7 @@ def test_divide():
 
 ## Conclusão
 
-Esta abordagem representa uma mudança de paradigma:
+Esta abordagem representa uma mudança de paradigma  
 
     - De testes como artefatos estáticos
 
