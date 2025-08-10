@@ -30,41 +30,41 @@ Modelos como GPT-4/Claude/LLaMA trazem novas capacidades:
 
 1. Extrator de Código
 
-- Analisa AST (Abstract Syntax Tree)
+    - Analisa AST (Abstract Syntax Tree)
 
-- Identifica entidades testáveis (funções, classes, métodos)
+    - Identifica entidades testáveis (funções, classes, métodos)
 
-- Extrai metadados (tipos de parâmetros, docstrings)
+    - Extrai metadados (tipos de parâmetros, docstrings)
 
 2. Sistema de Prompting
 
-- Templates estruturados para geração de testes
+    - Templates estruturados para geração de testes
 
-- Few-shot learning com exemplos de qualidade
+    - Few-shot learning com exemplos de qualidade
 
-- Restrições de formatação e padrões
+    - Restrições de formatação e padrões
 
 3. Modelo de Linguagem
 
-- Coração do sistema (GPT, Claude, modelos open-source)
+    - Coração do sistema (GPT, Claude, modelos open-source)
 
-- Responsável pela geração criativa dos casos de teste
+    - Responsável pela geração criativa dos casos de teste
 
-- Balanceia cobertura x precisão via parâmetros como temperature
+    - Balanceia cobertura x precisão via parâmetros como temperature
 
 4. Pós-processador
 
-- Validação sintática
+    - Validação sintática
 
-- Formatação consistente
+    - Formatação consistente
 
-- Adição de imports/configurações
+    - Adição de imports/configurações
 
 5. Sistema de Feedback
 
-- Coleta resultados da execução
+    - Coleta resultados da execução
 
-- Ajusta futuras gerações com base em erros
+    - Ajusta futuras gerações com base em erros
 
 ### Técnicas Avançadas
 
@@ -127,27 +127,27 @@ def test_divide():
 
 1. Cobertura de Código
 
-- % de linhas/funções/branches exercitados
+    - % de linhas/funções/branches exercitados
 
 2. Diversidade de Casos
 
-- Caminhos felizes
+    - Caminhos felizes
 
-- Tratamento de erros
+    - Tratamento de erros
 
-- Casos extremos (edge cases)
+    - Casos extremos (edge cases)
 
 3. Validade Semântica
 
-- Asserts verificam comportamento real
+    - Asserts verificam comportamento real
 
-- Mocks apropriados para dependências
+    - Mocks apropriados para dependências
 
 4. Eficiência
 
-- Tempo de execução dos testes
+    - Tempo de execução dos testes
 
-- Complexidade computacional
+    - Complexidade computacional
 
 ### Padrões de Geração
 
@@ -155,73 +155,73 @@ def test_divide():
 
 1. Orientação a Objetos
 
-- Testes de estado (atributos)
+    - Testes de estado (atributos)
 
-- Testes de comportamento (métodos)
+    - Testes de comportamento (métodos)
 
-- Testes de herança/polimorfismo
+    - Testes de herança/polimorfismo
 
 2. Funcional
 
-- Testes de pureza (sem side-effects)
+    - Testes de pureza (sem side-effects)
 
-- Testes de composição
+    - Testes de composição
 
-- Testes de funções de alta ordem
+    - Testes de funções de alta ordem
 
 3. Assíncrono
 
-- Testes de await/timeout
+    - Testes de await/timeout
 
-- Testes de concorrência
+    - Testes de concorrência
 
 **Tratamento de Dependências**
 
 1. Mocks Automáticos
 
-- Identificação de dependências externas
+    - Identificação de dependências externas
 
-- Geração de objetos mock
+    - Geração de objetos mock
 
-- Configuração de expectativas
+    - Configuração de expectativas
 
 2. Injeção de Dependência
 
-- Modificação de assinaturas para DI
+    - Modificação de assinaturas para DI
 
-- Criação de containers de teste
+    - Criação de containers de teste
 
 3. Testes de Integração
 
-- Configuração de ambientes
+    - Configuração de ambientes
 
-- Sequenciamento de operações
+    - Sequenciamento de operações
 
 ### Fluxo de Trabalho Ideal
 
 1. Fase de Desenvolvimento
 
-- Geração inicial dos testes
+    - Geração inicial dos testes
 
-- Validação manual crítica
+    - Validação manual crítica
 
 2. Fase de Refinamento
 
-- Execução e coleta de feedback
+    - Execução e coleta de feedback
 
-- Ajuste de prompts com base em falhas
+    - Ajuste de prompts com base em falhas
 
 3. Fase de Manutenção
 
-- Atualização automática de testes
+    - Atualização automática de testes
 
-- Detecção de regressões
+    - Detecção de regressões
 
 4. Fase de Evolução
 
-- Adição de novos casos para código modificado
+    - Adição de novos casos para código modificado
 
-- Expansão da cobertura
+    - Expansão da cobertura
 
 ### Desafios e Soluções
 
@@ -229,27 +229,27 @@ def test_divide():
 
 1. Testes Frágeis
 
-- Muito acoplados à implementação
+    - Muito acoplados à implementação
 
-- Solução: Prompts que enfatizam comportamento vs implementação
+    - Solução: Prompts que enfatizam comportamento vs implementação
 
 2. Cobertura Insuficiente
 
-- Falta de edge cases
+    - Falta de edge cases
 
-- Solução: Few-shot com exemplos complexos
+    - Solução: Few-shot com exemplos complexos
 
 3. Geração de Código Inválido
 
-- Erros de sintaxe/semântica
+    - Erros de sintaxe/semântica
 
-- Solução: Validação via AST parsing
+    - Solução: Validação via AST parsing
 
 4. Viés nos Testes
 
-- Padrões repetitivos
+    - Padrões repetitivos
 
-- Solução: Variação de temperature e top_p
+    - Solução: Variação de temperature e top_p
 
 ### Futuro da Tecnologia
 
@@ -257,42 +257,42 @@ def test_divide():
 
 1. Testes Baseados em Propriedades
 
-- Geração automática de inputs válidos
+    - Geração automática de inputs válidos
 
-- Verificação de invariantes
+    - Verificação de invariantes
 
 2. Testes Adaptativos
 
-- Aprendizado contínuo com execuções
+    - Aprendizado contínuo com execuções
 
-- Foco em áreas problemáticas
+    - Foco em áreas problemáticas
 
 3. Auto-correção
 
-- Sugestão de fixes para testes falhos
+    - Sugestão de fixes para testes falhos
 
-- Atualização automática de expectativas
+    - Atualização automática de expectativas
 
 4. Explicabilidade
 
-- Documentação gerada da lógica de testes
+    - Documentação gerada da lógica de testes
 
-- Justificativas para casos de teste
+    - Justificativas para casos de teste
 
 ## Conclusão
 
 Esta abordagem representa uma mudança de paradigma:
 
-- De testes como artefatos estáticos
+    - De testes como artefatos estáticos
 
-- Para processos dinâmicos e adaptativos
+    - Para processos dinâmicos e adaptativos
 
-- Onde humanos e IA colaboram para:
+    - Onde humanos e IA colaboram para:
 
-    - Maior qualidade de código
+        - Maior qualidade de código
 
-    - Desenvolvimento mais rápido
+        - Desenvolvimento mais rápido
 
-    - Sistemas mais robustos
+        - Sistemas mais robustos
 
 A combinação de LangChain com modelos de linguagem modernos cria um ciclo virtuoso onde o código e seus testes evoluem juntos de forma simbiótica.
